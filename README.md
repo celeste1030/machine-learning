@@ -29,4 +29,11 @@ To help process this data, you will create machine learning models capable of cl
 
 ## Compare Models
 
+## Technologies
+
+* Scikit-Learn
+* Python
+* Jupyter Notebook
+
+
 
