@@ -37,6 +37,7 @@ I chose to use a Seaborn heat map to explore the data because it's useful way to
 ![histogram army](Images/Xhist.png)
 I explored the frequency of my X data by creating an army of histograms with pandas.  These histograms show me the frequency of attributes in each column which helps me narrow down what to keep for my model.  The more evenly distributed an attribute is, the more likely I am to keep it.
 ![histogram why](Images/yhist.png)
+
 I also made a histogram for my y values.  This was useful to reference towards the end to see which y value needed to have the highest precision.  Later when I [compare models](#compare-models), "false positive" does have the highest precision showing that our model is useful for predicting the most frequent y value.
 
 ### Importances
