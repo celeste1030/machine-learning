@@ -82,8 +82,18 @@ X_test_scaled = X_scaler.transform(X_test)
 ```
 
 ## Fit and Tune Model Parameters
-* Train and Test at least two models.
-* Use `GridSearch` for at least one model to tune model hyperparameters.
+### Model 1
+
+GridSearch
+![model1](Classification_Reports/model1.png)
+
+### Model 2
+Random Forest Classifier
+![model3](Classification_Reports/model2.png)
+
+### Model 3
+Decision Tree Classifier
+![model3](Classification_Reports/model3.png)
 
 ## Compare Models
 * Use evaluation metrics to compare models.
