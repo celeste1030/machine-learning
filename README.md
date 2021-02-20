@@ -63,19 +63,23 @@ Nothing too similar here!
 
 Used Sklearn train_test_split to separate data into training and testing data.
 
-`target = df["koi_disposition"]
-
+```
+from sklearn.model_selection import train_test_split
+target = df["koi_disposition"]
 X_train, X_test, y_train, y_test = train_test_split(X, target, random_state=42)
-
-X_train` 
-
+X_train
+``` 
 
 ### Scaling
 
 I used Sklearn StandardScaler to scale the training and test data.
 
-
-* Separate the data into training and testing data.
+```
+from sklearn.preprocessing import StandardScaler
+X_scaler = StandardScaler().fit(X_train)
+X_train_scaled = X_scaler.transform(X_train)
+X_test_scaled = X_scaler.transform(X_test)
+```
 
 ## Fit and Tune Model Parameters
 * Train and Test at least two models.
