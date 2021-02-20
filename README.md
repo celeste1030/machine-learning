@@ -83,24 +83,35 @@ X_test_scaled = X_scaler.transform(X_test)
 
 ## Fit and Tune Model Parameters
 ### Model 1
-
-GridSearch
+**GridSearch**
 ![model1](Classification_Reports/model1.png)
 
 ### Model 2
-Random Forest Classifier
+**Random Forest Classifier**
 ![model3](Classification_Reports/model2.png)
 
 ### Model 3
-Decision Tree Classifier
+**Decision Tree Classifier**
 ![model3](Classification_Reports/model3.png)
 
 ## Compare Models
-* Use evaluation metrics to compare models.
-* Save the best model.
+
+**Model 2** is the most accurate model with an accuracy of 88% compared to Model 1 (81%) and Model 3 (83%).  Precision was similar for "false positive" for all models, while precision for "confirmed" and "candidate" were significantly higher in **Model 2**. Model 2's precision for "candidate" is almost 20% higher than Model 1.  
+
+|model(M)|label|precision|
+|--------|-----|---------|
+|M1|CANDIDATE|0.61| 
+|M1|CONFIRMED|0.70|  
+|M1|FALSE POSITIVE|0.98|
+|**M2**|CANDIDATE|**0.78**| 
+|**M2**|CONFIRMED|**0.80**|  
+|**M2**|FALSE POSITIVE|**0.98**|
+|M3|CANDIDATE|0.67| 
+|M3|CONFIRMED|0.73|  
+|M3|FALSE POSITIVE|0.96|
+
 
 ## Technologies
-
 * Scikit-Learn
 * Python
 * Jupyter Notebook
