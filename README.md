@@ -96,7 +96,9 @@ X_test_scaled = X_scaler.transform(X_test)
 
 ## Compare Models
 
-**Model 2** is the most accurate model with an accuracy of 88% compared to Model 1 (81%) and Model 3 (83%).  Precision was similar for "false positive" for all models, while precision for "confirmed" and "candidate" were significantly higher in **Model 2**. Model 2's precision for "candidate" is almost 20% higher than Model 1.  
+* **Model 2** is the most accurate model with an accuracy of **88%** compared to Model 1 (81%) and Model 3 (83%).
+* **Model 2** out performed Model 1 and Model 3 in recall, fscore, support and, most significantly, precision.
+* Precision was similar for "false positive" for all models, while precision for "confirmed" and "candidate" were significantly higher in **Model 2**. Model 2's precision for "candidate" is almost 20% higher than Model 1.
 
 |model(M)|label|precision|
 |--------|-----|---------|
