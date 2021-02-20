@@ -45,7 +45,7 @@ I also made a histogram for my y values.  This was useful to reference towards t
 
 ### Importances
 
-<img src="Images/important_sort.png" width="auto" height="500">
+<img src="Images/important_sort.png" width="300" height="500">
 
 I used Sklearn Random Forest Classifier to create a data frame of all of the features sorted by their importance.  I chose to keep most features with importances higher than .02.
 
